@@ -19,14 +19,15 @@
 <%!
     ArrayList<MemberVO> list;
     public void jspInit(){
-        list = new ArrayList<MemberVO>();
+        list = new ArrayList<>();
     }
 %>
 <%
     MemberVO memberVO = (MemberVO) session.getAttribute("memberVO");
     String id = request.getParameter("id");
     if (id!=null) {
-        for (MemberVO temp : list) {
+        for (int i = 0; i < list.size(); i++) {
+            MemberVO temp = list.get(i);
             if (temp.getId().equals(id)) {
                 System.out.println(temp);
                 break;
@@ -39,22 +40,6 @@
     }
     response.sendRedirect("read.jsp");
 %>
-
-<%--<%--%>
-    <%--MemberVO memberVO = (MemberVO)session.getAttribute("memberVO");--%>
-    <%--List<String> list = new ArrayList<>();--%>
-    <%--String path = application.getRealPath("WEB-INF/file/member.txt");--%>
-    <%--FileWriter fileWriter = new FileWriter(path);--%>
-    <%--BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);--%>
-    <%--memberVO = new MemberVO(memberVO.getId(),memberVO.getPw(),memberVO.getName(),memberVO.getZip1(),memberVO.getZip2(),--%>
-            <%--memberVO.getAdd1(),memberVO.getAdd2(),memberVO.getEmail(),memberVO.getLang(),memberVO.getTool(),memberVO.getProject());--%>
-    <%--list.add();--%>
-    <%--bufferedWriter.write(memberVO.toString());--%>
-    <%--bufferedWriter.flush();--%>
-
-    <%--response.sendRedirect("read.jsp");--%>
-
-<%--%>--%>
 
 </body>
 </html>

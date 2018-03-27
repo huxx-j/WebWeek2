@@ -51,7 +51,7 @@
      memberVO.setLang(temp);
      memberVO.setTool(tool);
      memberVO.setProject(project);
-     out.print(memberVO.toString());
+
 
      session.setAttribute("memberVO", memberVO);
      response.sendRedirect("storage.jsp");

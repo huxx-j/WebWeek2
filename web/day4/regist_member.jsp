@@ -16,65 +16,6 @@
     if (memberVO == null) {
         memberVO = new MemberVO("","","","","","","","",new String[]{"0","","",""},"0","0");
     }
-
-//    String id = memberVO.getId();
-//    if (id == null) {
-//        id = "";
-//    }
-//    String pw = memberVO.getPw();
-//    if (pw == null) {
-//        pw = "";
-//    }
-//    String name = memberVO.getName();
-//        if (name == null) {
-//            name = "";
-//        }
-//    String zip1 = memberVO.getZip1();
-//            if (zip1 == null) {
-//                zip1 = "";
-//            }
-//    String zip2 = memberVO.getZip2();
-//    if (zip2 == null) {
-//        zip2 = "";
-//    }
-//    String add1 = memberVO.getAdd1();
-//    if (add1 == null) {
-//        add1 = "";
-//    }
-//    String add2 = memberVO.getAdd2();
-//    if (add2 == null) {
-//        add2 = "";
-//    }
-//    String email = memberVO.getEmail();
-//    if (email == null) {
-//        email = "";
-//    }
-//    String[] lang = memberVO.getLang();
-//    String tool = memberVO.getTool();
-//    String project = memberVO.getProject();
-
-//    String id = request.getParameter("id");
-//    if (id == null) {
-//        id = "";
-//    }
-//    String pw = request.getParameter("pw");
-//    if (pw == null) {
-//        pw = "";
-//    }
-//    String name = request.getParameter("name");
-//    if (name == null) {
-//        name = "";
-//    }
-//    String zip1 = request.getParameter("zip1");
-//    if ()
-//    String zip2 = request.getParameter("zip2");
-//    String add1 = request.getParameter("add1");
-//    String add2 = request.getParameter("add2");
-//    String email = request.getParameter("email");
-//    String[] lang = request.getParameterValues("lang");
-//    String tool = request.getParameter("tool");
-//    String project = request.getParameter("project");
-
 %>
 <form action="process_regist.jsp" method="get">
 

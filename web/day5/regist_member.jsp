@@ -138,7 +138,7 @@
         </tr>
         <tr>
             <td>우편번호</td>
-            <td><input type="text" name="zip" size="6" id="zip" value="<%=memberVO.getZip()%>"></td>
+            <td><input type="text" name="zip" size="10" id="zip" value="<%=memberVO.getZip()%>"></td>
             <td><button onclick="return check_zip()">우편번호 체크</button> </td>
             <td></td>
         </tr>

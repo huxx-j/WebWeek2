@@ -21,7 +21,7 @@
 <%
     String zip = request.getParameter("zip");
 %>
-<form action="search_id.jsp" method="get">
+<form action="search_zip.jsp" method="get">
     우편번호 <input type="text" name="zip" id="zip" value="<%=zip%>">
     <input type="submit" value="우편번호 조회">
 </form>

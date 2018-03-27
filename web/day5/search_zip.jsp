@@ -11,6 +11,9 @@
     <title>Title</title>
 </head>
 <body>
-
+<%
+    String zip = request.getParameter("zip");
+    response.sendRedirect("zip_check.jsp?zip="+zip);
+%>
 </body>
 </html>
